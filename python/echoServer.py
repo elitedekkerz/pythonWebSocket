@@ -3,7 +3,7 @@ from websocket_server import WebsocketServer
 
 server =  WebsocketServer(1337 , host='127.0.0.1')
 
-def addClient(client):
+def addClient(client, server):
     print('newClient')
 
 def echo(client, server, message):
