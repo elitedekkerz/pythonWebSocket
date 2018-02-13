@@ -23,10 +23,10 @@
         console.log('WebSocket connected');
 
         setInterval(function(){
-          number++;
           var message = 'Fuckings: '+number;
           console.log('Sending message: [' + message + ']');
           websocket.send(message);
+          number++;
         }, 2000);
 
         websocket.onmessage = function(message){
